@@ -1,0 +1,214 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+/* Header Styles */
+.header {
+  display: flex;
+  background-color: #fffb00;
+  color: #000000;
+  height: 80px;
+  padding: 0 20px;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;}
+
+.menu-icon {
+  font-size: 24px; /* Adjust the font size for the hamburger icon */
+  cursor: pointer;
+  margin-right: 20px; /* Add spacing between the menu icon and the logo */
+}
+
+.logo img {
+  max-width: 100px; /* Adjust the logo size as needed */
+}
+
+.site-name {
+  font-size: 24px; /* Adjust the font size for the site name */
+  margin: 0; /* Remove any default margin */
+}
+
+/* Navigation Menu Styles */
+.navigation-menu {
+  position: absolute;
+  top: 80px; /* Adjust the top position to align with the header */
+  right: 0;
+  width: 100%;
+  background-color: #ffff00;
+  color: #000000;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.navigation-menu.open {
+  display: flex;
+  transform: translateY(0%);
+}
+
+.navigation-menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation-menu ul li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+
+  /* CSS for Home component */
+
+.car-listing {
+  text-align: left; /* Align all text to the left within the car listing */
+  margin: 20px;
+}
+
+.cars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.car {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 300px;
+  background-color: #fff; /* Add a background color to the card */
+  box-shadow:0 0 5px rgba(0, 0, 0, 0.2)
+}
+
+.car_image img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.car_name h2 {
+  font-size: 20px; /* Adjust the font size for the car name */
+  margin: 10px 0; /* Add spacing around the car name */
+}
+
+.car_details {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+  color: #5e5b5b;
+}
+
+.car_price p {
+  font-weight: bold;
+  font-size: 18px; /* Adjust the font size for the price */
+  color: #ff2f00; /* Customize the color as needed */
+  margin: 10px 0; /* Add spacing around the price */
+}
+
+.enquire-button {
+  background-color: #000; /* Black background color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 0; /* Adjust vertical padding as needed */
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%; /* 100% width */
+  margin-top: 10px; /* Add spacing between the price and the button */
+  border-radius: 5px;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+  .car {
+    max-width: 100%; /* Full-width cards on small screens */
+  }
+}
+
+/* Add this CSS to your stylesheet */
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .vehicle-details {
+    padding: 10px;
+  }
+
+  .top-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vehicle-text-details {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .vehicle-images {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .vehicle-images img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .mid-column {
+    margin-top: 20px;
+  }
+
+  .specifications,
+  .inspection,
+  .warranty {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+/* Add this CSS to your stylesheet */
+.bottom-column {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0; /* Add left: 0; to make it span the full width */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.call-us button {
+
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+
+}
+
